@@ -19,7 +19,7 @@ K1 = a * Kp; % Współczynnik straty ciepła przez ściany W/K
 Cvw = cpp * rop * Vw; % Pojemność cieplna pomieszczenia
 Cvp = cpp * rop * Vp; % Pojemność cieplna poddasza
 
-%=========== II część (punkt pracy) =========
+%=========== II część (punkt pracy) ==========
 % warunki początkowe
 Tzew0 = TzewN + 0;
 Pg0 = PgN * 1.0;
@@ -28,8 +28,8 @@ Pg0 = PgN * 1.0;
 Twew0 = (Pg0 * (Kp + Kd)) / (Kp * (a * Kp + (a + 1) * Kd)) + Tzew0;
 Tp0 = (Kp * Twew0 + Kd * Tzew0) / (Kp + Kd);
 
-%=========== III część (symulacja) ==========
-czas = 10000;
+%=========== III część (symulacja) ===========
+czas = 12000;
 czas_skoku = 500;
 dPg = 0;
 dTzew = 1;
